@@ -15,6 +15,7 @@
     flex-basis: 330px;
     padding: 20px;
     width: 290px;
+
 }
 
 .main_header .main_header_content .logo img{
@@ -59,7 +60,7 @@
 
 .main_cta{
     width: 100%;
-    background-image: url(../img/show-case-bb.png);
+    background-image: url(../img/show-case-bb.jpg);
     background-color: #2d3142;
     background-repeat: no-repeat;
     background-position: center center;
@@ -79,11 +80,20 @@
 }
 
 .main_cta .main_cta_content p{
-    font-size: 1.875em;
+    font-size: 1.5em;
     color: #fff;
     font-weight: 300;
     text-align: center;
-    margin: 20px 0;
+    margin: 30px 0;
+}
+
+.main_cta .main_cta_content .main_cta_content_spacer hr{
+    width: 5%;
+    height: 5px;
+    color: #fff;
+    background-color: #fff;
+    margin: 10 auto;
+    margin-bottom: 10 auto;
 }
 
 .main_cta .main_cta_content .btn{
@@ -100,6 +110,11 @@
     margin: 0 auto;
     max-width:1300px;
     padding: 300px 40px;
+}
+
+.main_cta .btn:hover{
+    color: #0c0c0c;
+    background-color: #ebebeb;
 }
 
 /* Início da estilização dos ARTIGOS */
@@ -156,13 +171,13 @@
     color: #333;
 }
 
-/* Inicio da estilização da dobra sobre a escola*/
+/* Inicio da estilização da dobra tecnologia*/
 
-.main_school{
+.main_tec{
     width: 100%;
 }
 
-.main_school_content{
+.main_tec_content{
     max-width: 1300px;
     padding: 0 20px;
     margin: 0 auto;
@@ -171,24 +186,24 @@
     justify-content: space-between;
 }
 
-.main_school_header{
+.main_tec_header{
     flex-basis: 100%;
     padding: 40px 0;
     color: #333;
     text-align: center;
 }
 
-.main_school_header h1{
+.main_tec_header h1{
     font-size: 2.2em;
     margin-bottom: 10px;
 }
 
-.main_school_content_center{
+.main_tec_content_center{
     flex-basis: calc(100% - 20px);
 
 }
 
-.main_school_content_center_content > header > p{
+.main_tec_content_center_content > header > p{
     padding: 10px 10px;
     margin-bottom: 20px;
     color: #fff;
@@ -199,31 +214,31 @@
     text-align: center;
 }
 
-.main_school_content_center_content > header > p span{
+.main_tec_content_center_content > header > p span{
     margin-left: 20px;
 }
 
-.main_school_content_center_content > header > p a{
+.main_tec_content_center_content > header > p a{
     color: #fff;
     font-size: 0.9em;
 }
 
-.main_school_content_center_content > header > p a:hover{
+.main_tec_content_center_content > header > p a:hover{
     text-decoration: underline;
 }
 
-.main_school_content_center_content > header > h2{
+.main_tec_content_center_content > header > h2{
     font-size: 1.2em;
     margin-bottom: 20px;
     text-align: center;
     
 }
 
-.main_school_content_center_content > p{
+.main_tec_content_center_content > p{
     margin-bottom: 20px;
 }
 
-.main_school_list{
+.main_tec_list{
     width: 100%;
     background-color: #ebebeb;
     border-radius: 5px;
@@ -235,30 +250,59 @@
     justify-content: space-between;
 }
 
-.main_school_list > header{
+.main_tec_list > header{
     flex-basis: 100%;
     color: #d36833;
     margin-bottom: 20px;
 }
 
-.main_school_list > article{
+.main_tec_list > article{
     flex-basis: calc(50% - 10px);
     margin: 4px 0;
 }
 
-.main_school_list > article h3{
+.main_tec_list > article h3{
     font-weight: 300;
 }
 
-.main_school_address{
+.main_tec .main_tec_skills{
+    margin: 30px auto;
+}
+
+.main_tec .main_tec_skills h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+.main_tec .main_tec_skills hr{
+    width: 5%;
+    height: 5px;
+    color: #2d3142;
+    background-color: #2d3142;
+    margin: 10 auto;
+    margin-bottom: 10 auto;
+}
+
+.main_tec .main_tec_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.main_tec_address{
     flex-basis: 100%;
     padding: 45px 0;
     text-align: center;
 }
 
-.main_school_address h2{
+.main_tec_address h3{
     font-size: 1.5em;
     margin-bottom: 5px;
+}
+
+.main_tec_address p{
+    font-size: 1em;
 }
 
 .main_tutor{
@@ -420,10 +464,10 @@
     width: 100%;
     text-align: center;
     padding: 20px 0;
-    background-color: #f7f7f7;
+    background-color:#2d3142;
     border-top: 1px solid #ebebeb;
     font-size: 0.9em;
-    color: #666;
+    color: #d36833;
     font-weight: 300;
 }
 
@@ -535,6 +579,14 @@
         flex-basis: calc(100% - 200px);
         margin: auto;
     }
+
+    .main_tec .main_tec_img{
+        display: flexbox;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 /* 830px */
 @media (max-width: 52em){
@@ -549,6 +601,10 @@
     .main_tutor_social_network > article{
         flex-basis: 50%;
         margin-bottom: 20px;
+    }
+
+    .main_tec .main_tec_img{
+        flex-basis: (80% - 20px);
     }
 }
 
