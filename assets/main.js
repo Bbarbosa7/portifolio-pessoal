@@ -6,6 +6,3 @@ $(function() {
       $(this).toggleClass('main_header_content_menu_mobile_obj_active');
    });
 });
-
-// Lazyload
-$("img.lazy").lazyload({effect : "fadeIn"});
